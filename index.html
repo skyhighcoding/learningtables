@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Leaarning Tables cont</title>
+
+        <style>
+            table, tr, td, th {
+              border: solid 5px green;
+            }
+            table {
+              border-collapse: collapse;
+            }
+            table thead tr {
+              background-color: blue;
+              color: white;
+            }
+            table tfoot tr {
+              background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--colspan is for horizontal spanning and rowspan is for vertical spanning. 
+  The two attributes are assigned numbers greater that zero which shows 
+  the number of cells you wish to span.-->
+
+  <table>
+    <thead>
+    <tr>
+      <th colspan="3">Student List</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Student1</td>
+        <td rowspan="2">10</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Student2</td>
+        <td rowspan="2">99</td>
+      </tr>
+      <tr>
+        <td>Student3</td>
+        <td>9</td>
+  
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2"> Total</td>
+        <td>199</td>
+      </tr>
+    </tfoot>
+<!-- *************************************************************************-->
+<hr>  
+</table>
+<br>
+<br>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td rowspan = "2">Hillary</td>
+      <td>Advanced Web</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Operating Syatem</td>
+      <td>60</td>
+    </tr>
+        <tr>
+      <td rowspan = "2">Lary</td>
+      <td>Advanced Web</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Operating Syatem</td>
+      <td>75</td>
+    </tr>
+    <tr>
+        <td></td>
+      <td colspan="2">Total Average: 72.5</td>
+    </tr>
+  </table>
+</body>
+</html>
